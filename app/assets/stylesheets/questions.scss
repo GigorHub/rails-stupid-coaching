@@ -1,62 +1,41 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
- $gray: #F4F4F4;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400');
 
- body {
-   font-family: 'Roboto', sans-serif;
+$gray: #F4F4F4;
+
+body {
+ font-family: 'Roboto', sans-serif;
+ font-weight: 300;
+ padding: 0 24px;
+}
+
+h1 {
+font-weight: 400;
+}
+
+blockquote {
+border-left: 6px solid #DDDDDD;
+}
+
+cite:before {
+content: "-"
+}
+
+.container {
+  padding: 10px 24px;
+  width: 800px;
+}
+
+.coach {
+  background-color: #FFFFE1;
+  p { font-weight: 400; }
+}
+
+a {
+ color: grey;
+ &:hover {
+   color: black;
  }
-
-  .card {
-    display: flex;
-  }
-
-  .left {
-    width: 7px;
-    height: 80px;
-    background: #DDDDDD;
-  }
-
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .question {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 500px;
-  }
-
-  .answer {
-    padding-left: 10px;
-    background-color: #FFFFE1;
-    width: 500px;
-  }
-
- .banner {
-   background: red;
-   h1 {
-     font-size: 50px;
-   }
- }
-
- .field {
-  width: 450px;
-  height: 20px;
- }
-
- .btn {
-  background-color: #327AB7;
-  color: white;
-  border-radius: 5px;
-  // width: 45px;
-  // height: 20px;
- }
-
-  a {
-   color: grey;
-   &:hover {
-     color: black;
-   }
- }
+}
